@@ -1,0 +1,21 @@
+#Verificação de frete
+
+peso = 10
+if peso <= 4:
+    frete = 9.0
+elif peso <= 5:
+    frete = 199
+else:
+    frete = 10.0
+print("Valor do frete:", frete)
+
+#Estimativa de entrega
+
+from datetime import datetime, timedelta
+
+def is_feriado(data, feriados):
+    return data in feriados
+def calcular_data_entrega(dias_entrega, feriados):
+    data_atual = datetime.now()
+    dias_adicionados = 0
+    while dias_adicionados < dias_
